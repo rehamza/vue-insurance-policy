@@ -1,3 +1,6 @@
+
+## Solution Explanation
+
 When I started to write solution for this exercise I have compe up with 2 solution in my mind and both solution will work properly
 
 Solution 1:
@@ -14,6 +17,8 @@ I Used the same pattern that default provided by Vue and used Vuex for data stat
 
 For styling I used 1 global style.css file to handle global css if we have and also use the component base css to handle component css individually in components and it is scoped only to components where we defined
 
+
+## Unit Testing using Jest
 I wrote some unit tests using Jest and these test cases are only medium level not complex right at the moment
 
 to run test cases use this command: npm run test:unit 
