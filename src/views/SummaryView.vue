@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <UserSummary msg="Summary" />
+    <UserSummary title="Summary" />
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <UserDetail msg="Tell us about yourself" />
+    <UserDetail title="Tell us about yourself" />
   </div>
 </template>
 

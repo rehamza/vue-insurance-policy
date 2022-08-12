@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <h1> {{ msg }}</h1>
+    <h1> {{ title }}</h1>
     <h5>Name: {{ user.name }}</h5>
     <h5>Age: {{ user.age }}</h5>
     <h5>Where do you live: {{ user.country }}</h5>
@@ -17,11 +17,11 @@ export default {
   name: "UserSummary",
   computed: {
     user() {
-      return this.$store.state.user;
+      return this.$store.getters.getUser;
     }
   },
   props: {
-    msg: String,
+    title: String,
   },
   methods: {
     handleBack() {

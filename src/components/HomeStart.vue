@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <h1> {{msg}}</h1>
+    <h1> {{title}}</h1>
     <p>Let's buy some insurance. It is going to take only a few steps</p>
     <button class="button" @click="handleStart()" >Start</button>
   </div>
@@ -11,7 +11,7 @@
 export default {
   name: "HomeStart",
   props: {
-    msg: String,
+    title: String,
   },
   methods: {
     handleStart() {

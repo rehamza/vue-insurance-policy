@@ -9,4 +9,11 @@ describe("HandleError.vue", () => {
     });
     expect(wrapper.text()).toMatch(msg);
   });
+  it("renders Handle Error Tile", () => {
+    const title = "Ooops";
+    const wrapper = shallowMount(HandleError, {
+      props: { title },
+    });
+    expect(wrapper.text()).toMatch(title);
+  });
 });

@@ -1,6 +1,6 @@
 <template>
   <div class="formContainer">
-    <h1> {{msg}}</h1>
+    <h1> {{title}}</h1>
     <div class="form">
         <label for="name">Name</label>
         <input v-model="user.name" type="text" class="input" name="name" placeholder="Add text" />
@@ -40,23 +40,26 @@
 
 <script>
 import {currencyData} from "@/constant/currencyData"
+import { mapGetters } from 'vuex'
 export default {
   name: "UserDetail",
   props: {
-    msg: String,
+    title: String,
   },
   data: function () {
     return {
-      user:{},
+      // user:{},
       currencyData,
       standardVal: 0,
       safeVal: 0,
       superSafeVal: 0
     }
-  } ,
-  mounted(){
-   this.user = this.$store.getters.getUser; 
   },
+  
+  computed: {
+    ...mapGetters({user: 'getUser'})
+  },
+
   methods: {
     handleBack() {
       this.$router.push('/')
